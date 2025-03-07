@@ -17,6 +17,8 @@ const nextConfig = {
     TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
     FAL_API_KEY: process.env.FAL_API_KEY,
     HF_API_KEY: process.env.HF_API_KEY,
+    FACEBOOK_PAGE_TOKEN: process.env.FACEBOOK_PAGE_TOKEN,
+    FACEBOOK_PAGE_ID: process.env.FACEBOOK_PAGE_ID,
   },
 };
 

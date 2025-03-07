@@ -9,11 +9,8 @@ export class FanpageSendNode implements WorkflowNode {
   private baseUrl = "https://graph.facebook.com/v20.0";
 
   constructor(pageId?: string, pageToken?: string) {
-    this.pageId = pageId || process.env.FACEBOOK_PAGE_ID || "100330828425458";
-    this.pageToken =
-      pageToken ||
-      process.env.FACEBOOK_PAGE_TOKEN ||
-      "EAANB9O0VP4oBOyIFNJlPpiucaKb4QQ06zLuKMxmxcilIChaD5cOtmCZCgxE2Yhzlh5hSTuZB13mZCFBBdWddLK4NLbsJDj0jOEB2qdRaoTd4Kzjo2KwmDyeMm65o9ouPZCkLZCte8k76fqkzzv8IGGaC1zy0aiFm1AflFXh8ZAzmZBWwAz7vlVHbw0MJIu532UjeoZCOIdDnX4RBL2Slbwl3q3Vh8EPQUMR4dEpNC1VwrgZDZD";
+    this.pageId = pageId || process.env.FACEBOOK_PAGE_ID || "";
+    this.pageToken = pageToken || process.env.FACEBOOK_PAGE_TOKEN || "";
     if (!this.pageId || !this.pageToken) {
       throw new Error("FanpageSendNode requires pageId and pageToken");
     }
